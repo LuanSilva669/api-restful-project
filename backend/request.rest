@@ -1,0 +1,92 @@
+POST http://localhost:3000/api/services
+Content-Type: application/json
+
+{
+    "name": "Algum serviço 2",
+    "description": "Alguma descrição",
+    "price": 1600,
+    "image": "https://imgs.search.brave.com/M7XLh9Ek7IE3H5ZyWamX45Tfse1inSKYhrJGlrJYt6M/rs:fit:715:225:1/g:ce/aHR0cHM6Ly90c2Uz/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5U/OWt2WGhuTlNnTHNS/NUxsTFFYYkhBSGFF/NiZwaWQ9QXBp"
+}
+
+###
+GET  http://localhost:3000/api/services 
+
+###
+GET http://localhost:3000/api/services/
+
+###
+DELETE  http://localhost:3000/api/services/641b31351742aa00d18c30a2
+
+###
+PUT   http://localhost:3000/api/services/641b3e851341e6e21f4930d9
+Content-Type: application/json
+
+{
+    "name": "TESTE ATUALIZAÇÃO",
+    "description": "Alguma descrição",
+    "price": 2630,
+    "image": "https://imgs.search.brave.com/M7XLh9Ek7IE3H5ZyWamX45Tfse1inSKYhrJGlrJYt6M/rs:fit:715:225:1/g:ce/aHR0cHM6Ly90c2Uz/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5U/OWt2WGhuTlNnTHNS/NUxsTFFYYkhBSGFF/NiZwaWQ9QXBp"
+}
+
+###
+POST http://localhost:3000/api/parties
+Content-Type: application/json
+
+{
+    "title":"meu evento",
+    "author": "Matheus",
+     "description": "Uma festa de aniversário",
+     "budget": 9000,
+     "image": "https://imgs.search.brave.com/M7XLh9Ek7IE3H5ZyWamX45Tfse1inSKYhrJGlrJYt6M/rs:fit:715:225:1/g:ce/aHR0cHM6Ly90c2Uz/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5U/OWt2WGhuTlNnTHNS/NUxsTFFYYkhBSGFF/NiZwaWQ9QXBp",
+     "services": [
+        {
+             "name": "Algum serviço 1",
+             "description": "Alguma descrição",
+             "price": 2630,
+             "image": "https://imgs.search.brave.com/M7XLh9Ek7IE3H5ZyWamX45Tfse1inSKYhrJGlrJYt6M/rs:fit:715:225:1/g:ce/aHR0cHM6Ly90c2Uz/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5U/OWt2WGhuTlNnTHNS/NUxsTFFYYkhBSGFF/NiZwaWQ9QXBp"
+        },
+
+         {
+             "name": "Algum Serviço 2",
+             "description": "Alguma descrição",
+             "price": 5000,
+             "image": "https://imgs.search.brave.com/M7XLh9Ek7IE3H5ZyWamX45Tfse1inSKYhrJGlrJYt6M/rs:fit:715:225:1/g:ce/aHR0cHM6Ly90c2Uz/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5U/OWt2WGhuTlNnTHNS/NUxsTFFYYkhBSGFF/NiZwaWQ9QXBp"
+        }
+     ]
+}
+
+###
+GET http://localhost:3000/api/parties
+
+###
+GET http://localhost:3000/api/parties/641b4c3eb464b1fec6c8c1b6
+
+###
+DELETE http://localhost:3000/api/parties/641b4c3eb464b1fec6c8c1b6
+
+###
+PUT http://localhost:3000/api/parties/641b4d30783783938c47ca38
+Content-Type: application/json
+
+{
+    "title":"meu evento",
+    "author": "Matheus",
+     "description": "Uma festa de aniversário",
+     "budget": 9000,
+     "image": "https://imgs.search.brave.com/M7XLh9Ek7IE3H5ZyWamX45Tfse1inSKYhrJGlrJYt6M/rs:fit:715:225:1/g:ce/aHR0cHM6Ly90c2Uz/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5U/OWt2WGhuTlNnTHNS/NUxsTFFYYkhBSGFF/NiZwaWQ9QXBp",
+     "services": [
+        {
+             "name": "Algum serviço 1",
+             "description": "Alguma descrição",
+             "price": 2630,
+             "image": "https://imgs.search.brave.com/M7XLh9Ek7IE3H5ZyWamX45Tfse1inSKYhrJGlrJYt6M/rs:fit:715:225:1/g:ce/aHR0cHM6Ly90c2Uz/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5U/OWt2WGhuTlNnTHNS/NUxsTFFYYkhBSGFF/NiZwaWQ9QXBp"
+        },
+
+         {
+             "name": "Algum Serviço 2",
+             "description": "Alguma descrição",
+             "price": 5000,
+             "image": "https://imgs.search.brave.com/M7XLh9Ek7IE3H5ZyWamX45Tfse1inSKYhrJGlrJYt6M/rs:fit:715:225:1/g:ce/aHR0cHM6Ly90c2Uz/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5U/OWt2WGhuTlNnTHNS/NUxsTFFYYkhBSGFF/NiZwaWQ9QXBp"
+        }
+     ]
+}
