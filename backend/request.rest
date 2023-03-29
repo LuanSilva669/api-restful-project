@@ -59,10 +59,10 @@ Content-Type: application/json
 GET http://localhost:3000/api/parties
 
 ###
-GET http://localhost:3000/api/parties/641b4c3eb464b1fec6c8c1b6
+GET http://localhost:3000/api/parties/641b4d30783783938c47ca38
 
 ###
-DELETE http://localhost:3000/api/parties/641b4c3eb464b1fec6c8c1b6
+DELETE http://localhost:3000/api/parties/641b4d30783783938c47ca38
 
 ###
 PUT http://localhost:3000/api/parties/641b4d30783783938c47ca38
